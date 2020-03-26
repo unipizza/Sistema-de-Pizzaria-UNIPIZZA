@@ -1,0 +1,13 @@
+adicionar campo status no pedido. >concluido, cancelado, etc.
+
+adicionar campo tipopgto no pedido. >cartão, dinheiro, etc.
+
+adicionar campo nome (comprador) no pedido.
+
+adicionar campo endereço no pedido. (NULL se não houver entrega)
+
+adicionar campo observação no pedido (banco e programa)
+
+remover campo qtde das tabelas materiaprima e bebidas.
+
+criar tabela estoquebebida, estoquemateria

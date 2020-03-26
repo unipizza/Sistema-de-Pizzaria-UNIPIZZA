@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBanco" targetNamespace="http://tempuri.org/dsBanco.xsd" xmlns:mstns="http://tempuri.org/dsBanco.xsd" xmlns="http://tempuri.org/dsBanco.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="pimConnectionStringNOVA" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="pimConnectionStringNOVA (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.prjPIM.Properties.Settings.GlobalReference.Default.pimConnectionStringNOVA" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="cadpizzaTableAdapter" GeneratorDataComponentClassName="cadpizzaTableAdapter" Name="cadpizza" UserDataComponentName="cadpizzaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pimConnectionStringNOVA (Settings)" DbObjectName="pim.cadpizza" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT cadpizza_id, cadpizza_desc, cadpizza_valor, cadpizza_status FROM cadpizza</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="cadprimaTableAdapter" GeneratorDataComponentClassName="cadprimaTableAdapter" Name="cadprima" UserDataComponentName="cadprimaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pimConnectionStringNOVA (Settings)" DbObjectName="pim.cadprima" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT cadmprima_id, cadmprima_desc, cadmprima_status FROM cadprima</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBanco" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dsBanco" msprop:Generator_UserDSName="dsBanco">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="cadpizza" msprop:Generator_TableClassName="cadpizzaDataTable" msprop:Generator_TableVarName="tablecadpizza" msprop:Generator_TablePropName="cadpizza" msprop:Generator_RowDeletingName="cadpizzaRowDeleting" msprop:Generator_RowChangingName="cadpizzaRowChanging" msprop:Generator_RowEvHandlerName="cadpizzaRowChangeEventHandler" msprop:Generator_RowDeletedName="cadpizzaRowDeleted" msprop:Generator_UserTableName="cadpizza" msprop:Generator_RowChangedName="cadpizzaRowChanged" msprop:Generator_RowEvArgName="cadpizzaRowChangeEvent" msprop:Generator_RowClassName="cadpizzaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cadprima" msprop:Generator_TableClassName="cadprimaDataTable" msprop:Generator_TableVarName="tablecadprima" msprop:Generator_TablePropName="cadprima" msprop:Generator_RowDeletingName="cadprimaRowDeleting" msprop:Generator_RowChangingName="cadprimaRowChanging" msprop:Generator_RowEvHandlerName="cadprimaRowChangeEventHandler" msprop:Generator_RowDeletedName="cadprimaRowDeleted" msprop:Generator_UserTableName="cadprima" msprop:Generator_RowChangedName="cadprimaRowChanged" msprop:Generator_RowEvArgName="cadprimaRowChangeEvent" msprop:Generator_RowClassName="cadprimaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
