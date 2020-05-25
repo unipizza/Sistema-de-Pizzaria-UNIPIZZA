@@ -49,6 +49,7 @@
             this.manutençãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuControleAcc = new System.Windows.Forms.ToolStripMenuItem();
             this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.ouvidoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -82,13 +83,13 @@
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(730, 17);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(733, 17);
             this.toolStripStatusLabel2.Spring = true;
             // 
             // lblData
             // 
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(76, 17);
+            this.lblData.Size = new System.Drawing.Size(73, 17);
             this.lblData.Text = "DATA/HORA";
             // 
             // menuStrip
@@ -102,7 +103,8 @@
             this.cadastroToolStripMenuItem,
             this.movimentaçãoToolStripMenuItem,
             this.relatóriosToolStripMenuItem,
-            this.manutençãoToolStripMenuItem});
+            this.manutençãoToolStripMenuItem,
+            this.ouvidoriaToolStripMenuItem});
             this.menuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
@@ -126,40 +128,40 @@
             // menuCadPizza
             // 
             this.menuCadPizza.Name = "menuCadPizza";
-            this.menuCadPizza.Size = new System.Drawing.Size(180, 22);
+            this.menuCadPizza.Size = new System.Drawing.Size(148, 22);
             this.menuCadPizza.Text = "Pizzas";
             this.menuCadPizza.Click += new System.EventHandler(this.PizzasToolStripMenuItem_Click);
             // 
             // menuMatPrima
             // 
             this.menuMatPrima.Name = "menuMatPrima";
-            this.menuMatPrima.Size = new System.Drawing.Size(180, 22);
+            this.menuMatPrima.Size = new System.Drawing.Size(148, 22);
             this.menuMatPrima.Text = "Matéria Prima";
             this.menuMatPrima.Click += new System.EventHandler(this.matériaPrimaToolStripMenuItem_Click);
             // 
             // menuBebidas
             // 
             this.menuBebidas.Name = "menuBebidas";
-            this.menuBebidas.Size = new System.Drawing.Size(180, 22);
+            this.menuBebidas.Size = new System.Drawing.Size(148, 22);
             this.menuBebidas.Text = "Produtos";
             this.menuBebidas.Click += new System.EventHandler(this.menuBebidas_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(145, 6);
             // 
             // menuUsuarios
             // 
             this.menuUsuarios.Name = "menuUsuarios";
-            this.menuUsuarios.Size = new System.Drawing.Size(180, 22);
+            this.menuUsuarios.Size = new System.Drawing.Size(148, 22);
             this.menuUsuarios.Text = "Usuários";
             this.menuUsuarios.Click += new System.EventHandler(this.menuUsuarios_Click);
             // 
             // menuFilial
             // 
             this.menuFilial.Name = "menuFilial";
-            this.menuFilial.Size = new System.Drawing.Size(180, 22);
+            this.menuFilial.Size = new System.Drawing.Size(148, 22);
             this.menuFilial.Text = "Filial";
             this.menuFilial.Click += new System.EventHandler(this.menuFilial_Click);
             // 
@@ -203,13 +205,20 @@
             // menuControleAcc
             // 
             this.menuControleAcc.Name = "menuControleAcc";
-            this.menuControleAcc.Size = new System.Drawing.Size(176, 22);
+            this.menuControleAcc.Size = new System.Drawing.Size(180, 22);
             this.menuControleAcc.Text = "Controle de Acesso";
             this.menuControleAcc.Click += new System.EventHandler(this.menuControleAcc_Click);
             // 
             // Timer
             // 
             this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
+            // ouvidoriaToolStripMenuItem
+            // 
+            this.ouvidoriaToolStripMenuItem.Name = "ouvidoriaToolStripMenuItem";
+            this.ouvidoriaToolStripMenuItem.Size = new System.Drawing.Size(71, 19);
+            this.ouvidoriaToolStripMenuItem.Text = "Ouvidoria";
+            this.ouvidoriaToolStripMenuItem.Click += new System.EventHandler(this.ouvidoriaToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -257,6 +266,7 @@
         private System.Windows.Forms.ToolStripMenuItem menuPedidos;
         private System.Windows.Forms.ToolStripMenuItem menuEstoque;
         private System.Windows.Forms.ToolStripMenuItem menuControleAcc;
+        private System.Windows.Forms.ToolStripMenuItem ouvidoriaToolStripMenuItem;
     }
 }
 

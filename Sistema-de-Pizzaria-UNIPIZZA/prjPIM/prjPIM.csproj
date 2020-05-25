@@ -467,6 +467,12 @@
     <Compile Include="frmEstoque.Designer.cs">
       <DependentUpon>frmEstoque.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOuvidoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOuvidoria.Designer.cs">
+      <DependentUpon>frmOuvidoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -505,6 +511,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEstoque.resx">
       <DependentUpon>frmEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOuvidoria.resx">
+      <DependentUpon>frmOuvidoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPedidos.resx">
       <DependentUpon>frmPedidos.cs</DependentUpon>

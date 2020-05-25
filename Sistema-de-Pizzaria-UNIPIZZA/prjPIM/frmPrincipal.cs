@@ -99,5 +99,12 @@ namespace prjPIM
         {
             
         }
+
+        private void ouvidoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmOuvidoria frmovd = new frmOuvidoria();
+            frmovd.MdiParent = this;
+            frmovd.Show();
+        }
     }
 }
