@@ -49,7 +49,7 @@
             // 
             this.btnApagarReclama.Enabled = false;
             this.btnApagarReclama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApagarReclama.Location = new System.Drawing.Point(240, 310);
+            this.btnApagarReclama.Location = new System.Drawing.Point(226, 310);
             this.btnApagarReclama.Name = "btnApagarReclama";
             this.btnApagarReclama.Size = new System.Drawing.Size(123, 33);
             this.btnApagarReclama.TabIndex = 35;
@@ -61,7 +61,7 @@
             // 
             this.btnApagarElogio.Enabled = false;
             this.btnApagarElogio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApagarElogio.Location = new System.Drawing.Point(238, 173);
+            this.btnApagarElogio.Location = new System.Drawing.Point(226, 173);
             this.btnApagarElogio.Name = "btnApagarElogio";
             this.btnApagarElogio.Size = new System.Drawing.Size(123, 33);
             this.btnApagarElogio.TabIndex = 34;
