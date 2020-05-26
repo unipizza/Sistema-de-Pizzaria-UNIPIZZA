@@ -42,6 +42,7 @@
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.btnVoltar = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.btnConectar = new System.Windows.Forms.Button();
             this.toolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             // 
             this.btnApagarReclama.Enabled = false;
             this.btnApagarReclama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApagarReclama.Location = new System.Drawing.Point(240, 310);
+            this.btnApagarReclama.Location = new System.Drawing.Point(240, 372);
             this.btnApagarReclama.Name = "btnApagarReclama";
             this.btnApagarReclama.Size = new System.Drawing.Size(123, 33);
             this.btnApagarReclama.TabIndex = 35;
@@ -61,7 +62,7 @@
             // 
             this.btnApagarElogio.Enabled = false;
             this.btnApagarElogio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApagarElogio.Location = new System.Drawing.Point(238, 173);
+            this.btnApagarElogio.Location = new System.Drawing.Point(238, 235);
             this.btnApagarElogio.Name = "btnApagarElogio";
             this.btnApagarElogio.Size = new System.Drawing.Size(123, 33);
             this.btnApagarElogio.TabIndex = 34;
@@ -73,7 +74,7 @@
             // 
             this.btnReclama.Enabled = false;
             this.btnReclama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReclama.Location = new System.Drawing.Point(369, 310);
+            this.btnReclama.Location = new System.Drawing.Point(369, 372);
             this.btnReclama.Name = "btnReclama";
             this.btnReclama.Size = new System.Drawing.Size(123, 33);
             this.btnReclama.TabIndex = 33;
@@ -84,7 +85,7 @@
             // 
             this.btnElogio.Enabled = false;
             this.btnElogio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnElogio.Location = new System.Drawing.Point(367, 173);
+            this.btnElogio.Location = new System.Drawing.Point(367, 235);
             this.btnElogio.Name = "btnElogio";
             this.btnElogio.Size = new System.Drawing.Size(123, 33);
             this.btnElogio.TabIndex = 32;
@@ -94,7 +95,8 @@
             // 
             // txtReclama
             // 
-            this.txtReclama.Location = new System.Drawing.Point(15, 224);
+            this.txtReclama.Enabled = false;
+            this.txtReclama.Location = new System.Drawing.Point(15, 286);
             this.txtReclama.Multiline = true;
             this.txtReclama.Name = "txtReclama";
             this.txtReclama.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -104,7 +106,8 @@
             // 
             // txtElogio
             // 
-            this.txtElogio.Location = new System.Drawing.Point(12, 87);
+            this.txtElogio.Enabled = false;
+            this.txtElogio.Location = new System.Drawing.Point(12, 149);
             this.txtElogio.Multiline = true;
             this.txtElogio.Name = "txtElogio";
             this.txtElogio.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -117,7 +120,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(12, 208);
+            this.label2.Location = new System.Drawing.Point(12, 270);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 13);
             this.label2.TabIndex = 29;
@@ -129,7 +132,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(12, 71);
+            this.label1.Location = new System.Drawing.Point(12, 133);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 28;
@@ -150,7 +153,7 @@
             this.toolStrip.Location = new System.Drawing.Point(0, 0);
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Padding = new System.Windows.Forms.Padding(0, 4, 2, 0);
-            this.toolStrip.Size = new System.Drawing.Size(514, 61);
+            this.toolStrip.Size = new System.Drawing.Size(533, 61);
             this.toolStrip.TabIndex = 27;
             this.toolStrip.Text = "toolStrip1";
             // 
@@ -188,11 +191,23 @@
             this.toolStripLabel2.Name = "toolStripLabel2";
             this.toolStripLabel2.Size = new System.Drawing.Size(0, 54);
             // 
+            // btnConectar
+            // 
+            this.btnConectar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnConectar.Location = new System.Drawing.Point(342, 65);
+            this.btnConectar.Name = "btnConectar";
+            this.btnConectar.Size = new System.Drawing.Size(148, 56);
+            this.btnConectar.TabIndex = 36;
+            this.btnConectar.Text = "Conectar";
+            this.btnConectar.UseVisualStyleBackColor = true;
+            this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click);
+            // 
             // frmOuvidoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(514, 361);
+            this.ClientSize = new System.Drawing.Size(533, 427);
+            this.Controls.Add(this.btnConectar);
             this.Controls.Add(this.btnApagarReclama);
             this.Controls.Add(this.btnApagarElogio);
             this.Controls.Add(this.btnReclama);
@@ -227,5 +242,6 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
         private System.Windows.Forms.ToolStripButton btnVoltar;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.Button btnConectar;
     }
 }
