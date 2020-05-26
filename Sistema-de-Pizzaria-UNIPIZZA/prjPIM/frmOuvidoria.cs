@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace prjPIM
 {
@@ -30,7 +31,6 @@ namespace prjPIM
 
         private void btnElogio_Click(object sender, EventArgs e)
         {
-
         }
 
         private void txtReclama_TextChanged(object sender, EventArgs e)
@@ -47,6 +47,26 @@ namespace prjPIM
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnConectar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                MySqlConnection objcon = new MySqlConnection("server=localhost; port=3306; user id=root;database=test;");
+                objcon.Open();
+                MessageBox.Show("Conectado");
+               this.txtElogio.Enabled = true;
+               this.txtReclama.Enabled = true;
+               this.btnConectar.Enabled = false;
+                objcon.Close();                                
+            }
+
+            catch
+            {
+                MessageBox.Show("Não conectou");
+            }
         }
     }
 }
