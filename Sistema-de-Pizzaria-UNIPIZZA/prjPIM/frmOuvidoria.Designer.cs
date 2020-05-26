@@ -49,7 +49,7 @@
             // 
             this.btnApagarReclama.Enabled = false;
             this.btnApagarReclama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnApagarReclama.Location = new System.Drawing.Point(238, 292);
+            this.btnApagarReclama.Location = new System.Drawing.Point(240, 310);
             this.btnApagarReclama.Name = "btnApagarReclama";
             this.btnApagarReclama.Size = new System.Drawing.Size(123, 33);
             this.btnApagarReclama.TabIndex = 35;
@@ -73,7 +73,7 @@
             // 
             this.btnReclama.Enabled = false;
             this.btnReclama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReclama.Location = new System.Drawing.Point(367, 292);
+            this.btnReclama.Location = new System.Drawing.Point(369, 310);
             this.btnReclama.Name = "btnReclama";
             this.btnReclama.Size = new System.Drawing.Size(123, 33);
             this.btnReclama.TabIndex = 33;
@@ -150,7 +150,7 @@
             this.toolStrip.Location = new System.Drawing.Point(0, 0);
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Padding = new System.Windows.Forms.Padding(0, 4, 2, 0);
-            this.toolStrip.Size = new System.Drawing.Size(517, 61);
+            this.toolStrip.Size = new System.Drawing.Size(514, 61);
             this.toolStrip.TabIndex = 27;
             this.toolStrip.Text = "toolStrip1";
             // 
@@ -192,7 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(517, 337);
+            this.ClientSize = new System.Drawing.Size(514, 361);
             this.Controls.Add(this.btnApagarReclama);
             this.Controls.Add(this.btnApagarElogio);
             this.Controls.Add(this.btnReclama);
