@@ -99,5 +99,24 @@ namespace prjPIM
         {
             
         }
+
+        private void faturamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRelFaturamento novo = new frmRelFaturamento();
+            novo.MdiParent = this;
+            novo.Show();
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRelProdutos novo = new frmRelProdutos();
+            novo.MdiParent = this;
+            novo.Show();
+        }
     }
 }
