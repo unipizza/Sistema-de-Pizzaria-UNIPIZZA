@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.stStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblOperador = new System.Windows.Forms.ToolStripStatusLabel();
@@ -46,10 +47,11 @@
             this.menuPedidos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuEstoque = new System.Windows.Forms.ToolStripMenuItem();
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuFaturamento = new System.Windows.Forms.ToolStripMenuItem();
             this.manutençãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuControleAcc = new System.Windows.Forms.ToolStripMenuItem();
             this.Timer = new System.Windows.Forms.Timer(this.components);
-            this.ouvidoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -103,8 +105,7 @@
             this.cadastroToolStripMenuItem,
             this.movimentaçãoToolStripMenuItem,
             this.relatóriosToolStripMenuItem,
-            this.manutençãoToolStripMenuItem,
-            this.ouvidoriaToolStripMenuItem});
+            this.manutençãoToolStripMenuItem});
             this.menuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
@@ -190,9 +191,19 @@
             // 
             // relatóriosToolStripMenuItem
             // 
+            this.relatóriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuFaturamento,
+            this.produtosToolStripMenuItem});
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
             this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 19);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
+            // 
+            // menuFaturamento
+            // 
+            this.menuFaturamento.Name = "menuFaturamento";
+            this.menuFaturamento.Size = new System.Drawing.Size(180, 22);
+            this.menuFaturamento.Text = "Faturamento";
+            this.menuFaturamento.Click += new System.EventHandler(this.faturamentoToolStripMenuItem_Click);
             // 
             // manutençãoToolStripMenuItem
             // 
@@ -205,7 +216,7 @@
             // menuControleAcc
             // 
             this.menuControleAcc.Name = "menuControleAcc";
-            this.menuControleAcc.Size = new System.Drawing.Size(180, 22);
+            this.menuControleAcc.Size = new System.Drawing.Size(176, 22);
             this.menuControleAcc.Text = "Controle de Acesso";
             this.menuControleAcc.Click += new System.EventHandler(this.menuControleAcc_Click);
             // 
@@ -213,12 +224,12 @@
             // 
             this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
-            // ouvidoriaToolStripMenuItem
+            // produtosToolStripMenuItem
             // 
-            this.ouvidoriaToolStripMenuItem.Name = "ouvidoriaToolStripMenuItem";
-            this.ouvidoriaToolStripMenuItem.Size = new System.Drawing.Size(71, 19);
-            this.ouvidoriaToolStripMenuItem.Text = "Ouvidoria";
-            this.ouvidoriaToolStripMenuItem.Click += new System.EventHandler(this.ouvidoriaToolStripMenuItem_Click);
+            this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.produtosToolStripMenuItem.Text = "Produtos";
+            this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -228,6 +239,7 @@
             this.Controls.Add(this.stStrip);
             this.Controls.Add(this.menuStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.MaximizeBox = false;
@@ -235,6 +247,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema de Gerenciamento de Pizzaria - UNIPIZZA";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.stStrip.ResumeLayout(false);
             this.stStrip.PerformLayout();
             this.menuStrip.ResumeLayout(false);
@@ -266,7 +279,8 @@
         private System.Windows.Forms.ToolStripMenuItem menuPedidos;
         private System.Windows.Forms.ToolStripMenuItem menuEstoque;
         private System.Windows.Forms.ToolStripMenuItem menuControleAcc;
-        private System.Windows.Forms.ToolStripMenuItem ouvidoriaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuFaturamento;
+        private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
     }
 }
 

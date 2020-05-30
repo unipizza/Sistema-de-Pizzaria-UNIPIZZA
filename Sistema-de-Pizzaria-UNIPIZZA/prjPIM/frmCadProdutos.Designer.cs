@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadProdutos));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.txtGrupoDesc = new System.Windows.Forms.TextBox();
             this.chkAtivo = new System.Windows.Forms.CheckBox();
             this.txtIdGrupo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,9 +50,6 @@
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.btnVoltar = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.txtGrupoDesc = new System.Windows.Forms.TextBox();
-            this.txtValor = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.SuspendLayout();
@@ -72,6 +72,33 @@
             this.groupBox2.Size = new System.Drawing.Size(504, 193);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label3.Location = new System.Drawing.Point(63, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 15);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Valor:";
+            // 
+            // txtValor
+            // 
+            this.txtValor.Location = new System.Drawing.Point(67, 149);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(101, 22);
+            this.txtValor.TabIndex = 24;
+            this.txtValor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValor_KeyPress_1);
+            // 
+            // txtGrupoDesc
+            // 
+            this.txtGrupoDesc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtGrupoDesc.Location = new System.Drawing.Point(117, 96);
+            this.txtGrupoDesc.Name = "txtGrupoDesc";
+            this.txtGrupoDesc.Size = new System.Drawing.Size(322, 22);
+            this.txtGrupoDesc.TabIndex = 23;
             // 
             // chkAtivo
             // 
@@ -247,33 +274,6 @@
             this.toolStripLabel2.Name = "toolStripLabel2";
             this.toolStripLabel2.Size = new System.Drawing.Size(0, 54);
             // 
-            // txtGrupoDesc
-            // 
-            this.txtGrupoDesc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtGrupoDesc.Location = new System.Drawing.Point(117, 96);
-            this.txtGrupoDesc.Name = "txtGrupoDesc";
-            this.txtGrupoDesc.Size = new System.Drawing.Size(322, 22);
-            this.txtGrupoDesc.TabIndex = 23;
-            // 
-            // txtValor
-            // 
-            this.txtValor.Location = new System.Drawing.Point(67, 149);
-            this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(101, 22);
-            this.txtValor.TabIndex = 24;
-            this.txtValor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValor_KeyPress_1);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(63, 131);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 15);
-            this.label3.TabIndex = 25;
-            this.label3.Text = "Valor:";
-            // 
             // frmCadProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,6 +282,7 @@
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.groupBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmCadProdutos";
