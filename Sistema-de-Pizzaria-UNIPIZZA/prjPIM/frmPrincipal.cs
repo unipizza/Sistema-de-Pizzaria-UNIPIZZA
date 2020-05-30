@@ -100,11 +100,23 @@ namespace prjPIM
             
         }
 
-        private void ouvidoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void faturamentoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmOuvidoria frmovd = new frmOuvidoria();
-            frmovd.MdiParent = this;
-            frmovd.Show();
+            frmRelFaturamento novo = new frmRelFaturamento();
+            novo.MdiParent = this;
+            novo.Show();
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRelProdutos novo = new frmRelProdutos();
+            novo.MdiParent = this;
+            novo.Show();
         }
     }
 }

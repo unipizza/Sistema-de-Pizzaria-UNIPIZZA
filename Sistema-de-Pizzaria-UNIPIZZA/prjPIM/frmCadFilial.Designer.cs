@@ -226,6 +226,7 @@
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.groupBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(6, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
