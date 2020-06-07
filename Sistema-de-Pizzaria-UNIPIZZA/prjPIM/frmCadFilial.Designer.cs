@@ -77,16 +77,20 @@
             // 
             this.txtFilialDesc.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtFilialDesc.Location = new System.Drawing.Point(103, 43);
+            this.txtFilialDesc.MaxLength = 50;
             this.txtFilialDesc.Name = "txtFilialDesc";
             this.txtFilialDesc.Size = new System.Drawing.Size(322, 22);
             this.txtFilialDesc.TabIndex = 17;
+            this.txtFilialDesc.TextChanged += new System.EventHandler(this.txtFilialDesc_TextChanged);
             // 
             // txtIdFilial
             // 
             this.txtIdFilial.Location = new System.Drawing.Point(52, 43);
+            this.txtIdFilial.MaxLength = 3;
             this.txtIdFilial.Name = "txtIdFilial";
             this.txtIdFilial.Size = new System.Drawing.Size(45, 22);
             this.txtIdFilial.TabIndex = 16;
+            this.txtIdFilial.TextChanged += new System.EventHandler(this.txtIdFilial_TextChanged);
             this.txtIdFilial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdFilial_KeyPress);
             // 
             // label2
@@ -140,6 +144,7 @@
             this.btnNovo.Size = new System.Drawing.Size(60, 52);
             this.btnNovo.Text = "Novo";
             this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnGravar
             // 
@@ -153,6 +158,7 @@
             this.btnGravar.Size = new System.Drawing.Size(60, 52);
             this.btnGravar.Text = "Gravar";
             this.btnGravar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // toolStripSeparator1
             // 
@@ -180,7 +186,6 @@
             // btnPesquisar
             // 
             this.btnPesquisar.AutoSize = false;
-            this.btnPesquisar.Enabled = false;
             this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
             this.btnPesquisar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPesquisar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -189,6 +194,7 @@
             this.btnPesquisar.Size = new System.Drawing.Size(60, 52);
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // toolStripLabel3
             // 
@@ -211,6 +217,7 @@
             this.btnVoltar.Size = new System.Drawing.Size(60, 52);
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // toolStripLabel2
             // 

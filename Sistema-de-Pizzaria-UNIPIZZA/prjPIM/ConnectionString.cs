@@ -12,7 +12,7 @@ namespace prjPIM
     {
         public static MySqlConnection conn()
         {
-            string cstring = "Server=localhost;Database=unipizza;Uid=root;Pwd=root;";
+            string cstring = "Server=localhost;Database=unipizza;Uid=root;Pwd=;";
             MySqlConnection connect = new MySqlConnection(cstring);
             connect.Open();
             return connect;

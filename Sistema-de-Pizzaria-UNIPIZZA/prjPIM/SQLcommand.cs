@@ -5,84 +5,74 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace prjPIM
 {
     public class SQLcommand
     {
+        
         MySqlCommand cmd = new MySqlCommand();
 
         #region VARIAVEIS
         // >PRIVATE<
-        private DataTable _dtpizza_porID = new DataTable();
-        private DataTable _dtmatprima_porIDPIZZA = new DataTable();
-        private DataTable _dtinsertpizza = new DataTable();
+        private DataTable _dtcadunidade = new DataTable();
 
         // >PUBLIC<
-        public DataTable dtpizza_porID
+        public DataTable dtcadunidade
         {
             get
             {
-                return _dtpizza_porID;
+                return _dtcadunidade;
             }
             set
             {
-                _dtpizza_porID = value;
-            }
-        }
-        public DataTable dtmatprima_porIDPIZZA
-        {
-            get
-            {
-                return _dtmatprima_porIDPIZZA;
-            }
-            set
-            {
-                _dtmatprima_porIDPIZZA = value;
-            }
-        }
-        public DataTable inserepizza
-        {
-            get
-            {
-                return _dtinsertpizza;
-            }
-            set
-            {
-                _dtinsertpizza = value;
+                _dtcadunidade = value;
             }
         }
         #endregion
 
         #region METODOS - SELECT
-        public void selectpizza_porID(int pizzaid)
+        public void cadunidadeselect_porID(string idunidade)
         { 
             cmd.Connection = connectionString.conn();
-            cmd.CommandText = "SELECT * FROM CADPROD WHERE CADPROD_IDPROD = '" + pizzaid + "'";
+            cmd.CommandText = "SELECT * FROM cadunidade where id_unidade ='"+idunidade+"'";
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-            da.Fill(_dtpizza_porID);
+            da.Fill(_dtcadunidade);
             cmd.Connection.Close();
         }
-        public void selectmatprima_porDESC(int pizzaid){
-            cmd.Connection = connectionString.conn();
-            cmd.CommandText = "SELECT m.cadmprima_idmat,m.cadmprima_desc,p.pizzaxmat_qtd " +
-                "FROM cadmprima M INNER JOIN PIZZAXMAT P ON M.cadmprima_idmat = P.pizzaxmat_idmat " +
-                "WHERE P.pizzaxmat_idpizza =  '" + pizzaid + "'";
-            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-            da.Fill(_dtmatprima_porIDPIZZA);
-            cmd.Connection.Close();
-        }
-        public void insertpizza(string pizzadesc, string pizzavalor, string pizzagruprod, string pizzastatus)
-        {
-            cmd.Connection = connectionString.conn();
-            cmd.CommandText = "INSERT INTO CADPROD (cadprod_desc, cadprod_valor, cadprod_idgruprod, cadprod_status) " +
-                "VALUES ('"+pizzadesc+"','"+pizzavalor+"','"+pizzagruprod+"','"+pizzastatus+"');";
-            cmd.ExecuteNonQuery();
-            cmd.Connection.Close();
-        }
+        
         #endregion
 
         #region METODOS - INSERT, UPDATE, DELETE
+        public void cadunidadeinsert(string desc, string status)
+        {
+            cmd.Connection = connectionString.conn();
+            cmd.CommandText = "insert into cadunidade (descricao, status) values ('"+desc+"','"+status+"')";
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            cmd.Connection.Close();
+        }
+
+        public void cadunidadeupdate(string desc, string status,string id)
+        {
+            cmd.Connection = connectionString.conn();
+            cmd.CommandText = "update cadunidade set descricao='" + desc + "', status='" + status + "' where id_unidade='" + id + "';";
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            cmd.Connection.Close();
+        }
         #endregion
     }
 }

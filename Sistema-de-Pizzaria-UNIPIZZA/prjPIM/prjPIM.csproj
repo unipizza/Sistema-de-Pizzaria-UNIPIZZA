@@ -501,6 +501,12 @@
     <Compile Include="frmEstoque.Designer.cs">
       <DependentUpon>frmEstoque.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPesquisaFilial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesquisaFilial.Designer.cs">
+      <DependentUpon>frmPesquisaFilial.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRelFaturamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -557,6 +563,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEstoque.resx">
       <DependentUpon>frmEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesquisaFilial.resx">
+      <DependentUpon>frmPesquisaFilial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRelFaturamento.resx">
       <DependentUpon>frmRelFaturamento.cs</DependentUpon>

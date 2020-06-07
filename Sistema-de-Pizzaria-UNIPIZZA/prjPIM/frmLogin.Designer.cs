@@ -74,6 +74,7 @@
             // 
             // txtLogin
             // 
+            this.txtLogin.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtLogin.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogin.Location = new System.Drawing.Point(248, 98);
             this.txtLogin.Name = "txtLogin";
@@ -83,6 +84,7 @@
             // 
             // txtSenha
             // 
+            this.txtSenha.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtSenha.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(248, 156);
             this.txtSenha.Name = "txtSenha";

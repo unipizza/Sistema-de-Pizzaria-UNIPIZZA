@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Jdforsythe.MySQLConnection;
 using MySql.Data.MySqlClient;
 
 namespace prjPIM
@@ -50,15 +51,13 @@ namespace prjPIM
 
         private void btnAcessar_Click(object sender, EventArgs e)
         {
-            string sqlcon = "SERVER=localhost; DATABASE=unipizza; UID=root; PWD=root; PORT=3306";
             string sqlCmd = "SELECT * FROM cadusuario WHERE username='" + txtLogin.Text + "'AND senha='" + txtSenha.Text + "'";
 
-            MySqlConnection conn = new MySqlConnection(sqlcon);
+            MySqlConnection conn = connectionString.conn();
             MySqlCommand cmd = new MySqlCommand(sqlCmd, conn);
 
             try
             {
-                conn.Open();
                 MySqlDataReader dr = cmd.ExecuteReader();
 
 

@@ -118,5 +118,10 @@ namespace prjPIM
             novo.MdiParent = this;
             novo.Show();
         }
+
+        private void frmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

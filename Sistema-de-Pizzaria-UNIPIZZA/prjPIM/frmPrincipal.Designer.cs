@@ -130,40 +130,40 @@
             // menuCadPizza
             // 
             this.menuCadPizza.Name = "menuCadPizza";
-            this.menuCadPizza.Size = new System.Drawing.Size(180, 22);
+            this.menuCadPizza.Size = new System.Drawing.Size(158, 22);
             this.menuCadPizza.Text = "Pizzas";
             this.menuCadPizza.Click += new System.EventHandler(this.PizzasToolStripMenuItem_Click);
             // 
             // menuMatPrima
             // 
             this.menuMatPrima.Name = "menuMatPrima";
-            this.menuMatPrima.Size = new System.Drawing.Size(180, 22);
+            this.menuMatPrima.Size = new System.Drawing.Size(158, 22);
             this.menuMatPrima.Text = "Matéria Prima";
             this.menuMatPrima.Click += new System.EventHandler(this.matériaPrimaToolStripMenuItem_Click);
             // 
             // menuBebidas
             // 
             this.menuBebidas.Name = "menuBebidas";
-            this.menuBebidas.Size = new System.Drawing.Size(180, 22);
+            this.menuBebidas.Size = new System.Drawing.Size(158, 22);
             this.menuBebidas.Text = "Produtos";
             this.menuBebidas.Click += new System.EventHandler(this.menuBebidas_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(155, 6);
             // 
             // menuUsuarios
             // 
             this.menuUsuarios.Name = "menuUsuarios";
-            this.menuUsuarios.Size = new System.Drawing.Size(180, 22);
+            this.menuUsuarios.Size = new System.Drawing.Size(158, 22);
             this.menuUsuarios.Text = "Usuários";
             this.menuUsuarios.Click += new System.EventHandler(this.menuUsuarios_Click);
             // 
             // menuFilial
             // 
             this.menuFilial.Name = "menuFilial";
-            this.menuFilial.Size = new System.Drawing.Size(180, 22);
+            this.menuFilial.Size = new System.Drawing.Size(158, 22);
             this.menuFilial.Text = "Filial";
             this.menuFilial.Click += new System.EventHandler(this.menuFilial_Click);
             // 
@@ -174,20 +174,20 @@
             this.menuEstoque});
             this.movimentaçãoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("movimentaçãoToolStripMenuItem.Image")));
             this.movimentaçãoToolStripMenuItem.Name = "movimentaçãoToolStripMenuItem";
-            this.movimentaçãoToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
+            this.movimentaçãoToolStripMenuItem.Size = new System.Drawing.Size(122, 21);
             this.movimentaçãoToolStripMenuItem.Text = "Movimentação";
             // 
             // menuPedidos
             // 
             this.menuPedidos.Name = "menuPedidos";
-            this.menuPedidos.Size = new System.Drawing.Size(180, 22);
+            this.menuPedidos.Size = new System.Drawing.Size(123, 22);
             this.menuPedidos.Text = "Pedidos";
             this.menuPedidos.Click += new System.EventHandler(this.menuPedidos_Click);
             // 
             // menuEstoque
             // 
             this.menuEstoque.Name = "menuEstoque";
-            this.menuEstoque.Size = new System.Drawing.Size(180, 22);
+            this.menuEstoque.Size = new System.Drawing.Size(123, 22);
             this.menuEstoque.Text = "Estoque";
             this.menuEstoque.Click += new System.EventHandler(this.menuEstoque_Click);
             // 
@@ -198,20 +198,20 @@
             this.produtosToolStripMenuItem});
             this.relatóriosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("relatóriosToolStripMenuItem.Image")));
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(95, 21);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
             // 
             // menuFaturamento
             // 
             this.menuFaturamento.Name = "menuFaturamento";
-            this.menuFaturamento.Size = new System.Drawing.Size(180, 22);
+            this.menuFaturamento.Size = new System.Drawing.Size(149, 22);
             this.menuFaturamento.Text = "Faturamento";
             this.menuFaturamento.Click += new System.EventHandler(this.faturamentoToolStripMenuItem_Click);
             // 
             // produtosToolStripMenuItem
             // 
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.produtosToolStripMenuItem.Text = "Produtos";
             this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
             // 
@@ -221,13 +221,13 @@
             this.menuControleAcc});
             this.manutençãoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("manutençãoToolStripMenuItem.Image")));
             this.manutençãoToolStripMenuItem.Name = "manutençãoToolStripMenuItem";
-            this.manutençãoToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
+            this.manutençãoToolStripMenuItem.Size = new System.Drawing.Size(108, 21);
             this.manutençãoToolStripMenuItem.Text = "Manutenção";
             // 
             // menuControleAcc
             // 
             this.menuControleAcc.Name = "menuControleAcc";
-            this.menuControleAcc.Size = new System.Drawing.Size(180, 22);
+            this.menuControleAcc.Size = new System.Drawing.Size(190, 22);
             this.menuControleAcc.Text = "Controle de Acesso";
             this.menuControleAcc.Click += new System.EventHandler(this.menuControleAcc_Click);
             // 
@@ -251,6 +251,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema de Gerenciamento de Pizzaria - UNIPIZZA";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPrincipal_FormClosing);
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.stStrip.ResumeLayout(false);
             this.stStrip.PerformLayout();
