@@ -50,7 +50,7 @@
             this.btnAcessar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnAcessar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             this.btnAcessar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcessar.Location = new System.Drawing.Point(248, 210);
+            this.btnAcessar.Location = new System.Drawing.Point(209, 159);
             this.btnAcessar.Name = "btnAcessar";
             this.btnAcessar.Size = new System.Drawing.Size(88, 35);
             this.btnAcessar.TabIndex = 0;
@@ -64,7 +64,7 @@
             this.btnSair.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnSair.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(352, 210);
+            this.btnSair.Location = new System.Drawing.Point(313, 159);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(88, 35);
             this.btnSair.TabIndex = 1;
@@ -76,7 +76,7 @@
             // 
             this.txtLogin.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtLogin.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogin.Location = new System.Drawing.Point(248, 98);
+            this.txtLogin.Location = new System.Drawing.Point(209, 47);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(192, 25);
             this.txtLogin.TabIndex = 2;
@@ -86,7 +86,7 @@
             // 
             this.txtSenha.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtSenha.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(248, 156);
+            this.txtSenha.Location = new System.Drawing.Point(209, 105);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(192, 25);
@@ -96,7 +96,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(69, 79);
+            this.pictureBox1.Location = new System.Drawing.Point(30, 28);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(135, 132);
             this.pictureBox1.TabIndex = 4;
@@ -105,7 +105,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(210, 91);
+            this.pictureBox2.Location = new System.Drawing.Point(171, 40);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -116,7 +116,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(210, 149);
+            this.pictureBox3.Location = new System.Drawing.Point(171, 98);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -127,11 +127,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label1.Location = new System.Drawing.Point(366, 294);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkGray;
+            this.label1.Location = new System.Drawing.Point(1, 206);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 14);
+            this.label1.Size = new System.Drawing.Size(119, 12);
             this.label1.TabIndex = 7;
             this.label1.Text = "UNIPIZZA - Versão 1.0.0.1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -141,7 +142,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkGray;
-            this.label2.Location = new System.Drawing.Point(248, 79);
+            this.label2.Location = new System.Drawing.Point(209, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 14);
             this.label2.TabIndex = 8;
@@ -152,7 +153,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(248, 139);
+            this.label3.Location = new System.Drawing.Point(209, 88);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(101, 14);
             this.label3.TabIndex = 9;
@@ -163,7 +164,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(508, 317);
+            this.BackgroundImage = global::prjPIM.Properties.Resources.PngJoy_twitch_overlay_parallel_png_download_730204;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(431, 221);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -174,6 +177,7 @@
             this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnAcessar);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogin";

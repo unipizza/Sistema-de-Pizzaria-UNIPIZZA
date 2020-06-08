@@ -44,6 +44,9 @@
             // 
             // dgvFilial
             // 
+            this.dgvFilial.AllowUserToAddRows = false;
+            this.dgvFilial.AllowUserToDeleteRows = false;
+            this.dgvFilial.AllowUserToResizeRows = false;
             this.dgvFilial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFilial.Location = new System.Drawing.Point(12, 12);
             this.dgvFilial.Name = "dgvFilial";

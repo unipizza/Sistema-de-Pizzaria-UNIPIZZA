@@ -222,7 +222,15 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.CData.MySQL, Version=19.0.0.40, Culture=neutral, PublicKeyToken=cdc168f89cffe9cf" />
+    <Reference Include="System.Data.CData.MySQL, Version=19.0.0.40, Culture=neutral, PublicKeyToken=cdc168f89cffe9cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\CData.MySQL.19.0.7354\lib\net40\System.Data.CData.MySQL.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.CData.MySQL.Designer, Version=19.0.0.40, Culture=neutral, PublicKeyToken=cdc168f89cffe9cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\CData.MySQL.19.0.7354\lib\net40\System.Data.CData.MySQL.Designer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.CData.MySQL.Entities.EF6, Version=19.0.0.40, Culture=neutral, PublicKeyToken=cdc168f89cffe9cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\CData.MySQL.19.0.7354\lib\net40\System.Data.CData.MySQL.Entities.EF6.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.Odbc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.Odbc.4.5.0\lib\net461\System.Data.Odbc.dll</HintPath>
     </Reference>
@@ -593,6 +601,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Relatorios\RelFaturamento.rdlc" />
     <EmbeddedResource Include="Relatorios\RelProdutos.rdlc" />
@@ -620,6 +629,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PngJoy_twitch-overlay-parallel-png-download_7302041.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

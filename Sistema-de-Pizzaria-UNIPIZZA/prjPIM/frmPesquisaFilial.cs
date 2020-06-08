@@ -50,22 +50,49 @@ namespace prjPIM
         private void select()
         {
             DataTable dt = new DataTable();
+            string cmd = "";
 
             if (rdbID.Checked)
             {
                 MySqlConnection conn = connectionString.conn();
-                MySqlDataAdapter da = new MySqlDataAdapter("select * from cadunidade where id_unidade = '" + txtFiltro.Text + "'", conn);
+                if (rdbTodos.Checked)
+                {
+                    cmd = "select * from cadunidade where id_unidade = '" + txtFiltro.Text + "'";
+                }
+                else if (rdbAtivo.Checked)
+                {
+                    cmd = "select * from cadunidade where id_unidade = '" + txtFiltro.Text + "' and status = 'A'";
+                }
+                else if (rdbInativo.Checked)
+                {
+                    cmd = "select * from cadunidade where id_unidade = '" + txtFiltro.Text + "' and status = 'I'";
+                }
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd, conn);
                 da.Fill(dt);
                 dgvFilial.DataSource = dt;
                 conn.Close();
+                cmd = "";
             }
             else
             {
                 MySqlConnection conn = connectionString.conn();
-                MySqlDataAdapter da = new MySqlDataAdapter("select * from cadunidade where descricao like '%" + txtFiltro.Text + "%'", conn);
+                if (rdbTodos.Checked)
+                {
+                    cmd = "select * from cadunidade where descricao like '%" + txtFiltro.Text + "%'";
+                }
+                else if (rdbAtivo.Checked)
+                {
+                    cmd = "select * from cadunidade where descricao like '%" + txtFiltro.Text + "%' and status = 'A'";
+                }
+                else if (rdbInativo.Checked)
+                {
+                    cmd = "select * from cadunidade where descricao like '%" + txtFiltro.Text + "%' and status = 'I'";
+                }
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd, conn);
                 da.Fill(dt);
                 dgvFilial.DataSource = dt;
                 conn.Close();
+                cmd = "";
             }
         }
 
